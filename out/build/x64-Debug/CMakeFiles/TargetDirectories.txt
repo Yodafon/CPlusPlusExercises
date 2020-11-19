@@ -1,0 +1,3 @@
+C:/Users/Laci/Documents/Projects/Chatter/out/build/x64-Debug/CMakeFiles/Chatter.dir
+C:/Users/Laci/Documents/Projects/Chatter/out/build/x64-Debug/CMakeFiles/edit_cache.dir
+C:/Users/Laci/Documents/Projects/Chatter/out/build/x64-Debug/CMakeFiles/rebuild_cache.dir
