@@ -16,13 +16,19 @@ elseif(CMAKE_COMPILER_IS_GNUCC OR CMAKE_COMPILER_IS_GNUCXX)
   set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -Wall -Wno-long-long -pedantic")
 endif()
 
-project ("Chatter") 
- 
+project ("Chatter_Server") 
 
-add_subdirectory("Client")
-add_subdirectory("Server")
-
+file(GLOB Chatter_SRC "Server/header/*.h"
+	                  "Server/src/*.cpp"
+                      )
 # Add source to this project's executable.
+add_executable(Chatter_Server ${Chatter_SRC}   "src/Chatter.cpp"   "header/Chatter.h")
+target_include_directories(Chatter_Server PUBLIC "${PROJECT_BINARY_DIR}/Server")
+
+include_directories("C:/Users/Laci/Documents/Projects/Boost")
+include_directories("C:/Users/Laci/Documents/Projects/GoogleTest/googletest/include")
+target_link_directories(Chatter_Server PUBLIC "C:/Users/Laci/Documents/Projects/Boost/stage/lib")
+target_link_directories(Chatter_Server PUBLIC "C:/Users/Laci/Documents/Projects/Boost/stage/lib")
 
 # speficy C++ standard
 set(CMAKE_CXX_STANDARD 17)
