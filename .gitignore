@@ -13,6 +13,9 @@
 # User-specific files (MonoDevelop/Xamarin Studio)
 *.userprefs
 
+!./*
+Chatter/*
+
 # Build results
 [Dd]ebug/
 [Dd]ebugPublic/
@@ -153,6 +156,7 @@ AutoTest.Net/
 
 # Installshield output folder
 [Ee]xpress/
+/out
 
 # DocProject is a documentation generator add-in
 DocProject/buildhelp/
